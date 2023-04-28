@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m m m m m f f f f"
+    "r r r r r r r r r r r r";
+}
+
+header{
+    grid-area: h;
+    border-bottom: 1px solid white;
+}
+
+.logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+main{
+    grid-area: m;
+    
+}
+
+main > img{
+    width: 450px;
+    padding-left: 250px;
+    padding-top: 90px;
+}
+
+main > p{
+    padding-left: 150px;
+    font-size: 1.5rem;
+    font-family: 'rubik mono one';
+}
+
+section{
+    grid-area: f;
+}
+section > div > form > fieldset > legend{
+    font-size: 2rem;
+}
+
+section > div > form > fieldset{
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+input[type="submit"]{
+    color: white;
+}
+
+footer{
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > ul{
+    list-style-type: none;
+    display: flex;
+}
+footer > ul > li{
+    padding-left: 16px;
+}

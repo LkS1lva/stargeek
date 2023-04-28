@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto auto auto auto;
+    grid-template-areas:
+    "h h"
+    "l l"
+    "c c"
+    "s s"
+    "r r";
+}
+
+header{
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.hesquerda{
+    display: flex;
+    column-gap: 40px;
+}
+
+.logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.barrapesquisa{
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+   padding: 10px;
+    border-radius: 15px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10PX;
+}
+
+.hdireita > ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+main{
+    grid-area: c;
+    margin-top: 30px;
+    font-family: 'Roboto';
+
+}
+
+main > h1{
+    padding-left: 60px;
+    font-family: 'Roboto';
+}
+main > div > h3{
+    text-align: center;
+}
+.catalogo{
+    display: flex; 
+    column-gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.main{
+    grid-area: l;
+    background-image: url(imagens/estrelamorte.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-left: 50px;
+   row-gap: 30px;
+   height: 453px;
+}
+
+.main > p{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Rubik Mono One';
+}
+
+.main > a{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.Capasiteimg{
+    background-image: url(imagens/estrelamorte.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50%;
+}
+
+.capasitetxt{
+    
+  color: white;
+}
+
+.img img{
+    width: 184px;
+    height: 273px;
+}
+
+
+section{
+    display: flex;
+    grid-area: s ;
+    margin-top: 20px;
+}
+
+.jogos{
+
+ background-color: black;
+ color: white;
+ width: 50%;
+ height: auto;
+ padding-top: 180px;
+ padding-left: 30px;
+ font-weight: 900;
+ font-size: 3rem;
+ padding-bottom: 30px;
+ font-family: 'Rubik Mono One';
+}
+
+.livros{
+    background-color: grey;
+    width: 50%;
+    height: auto;
+    
+    padding-top: 180px;
+    padding-left: 30px;
+    font-weight: 900;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    font-family: 'Rubik Mono One';
+}
+
+
+
+footer{
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+footer > ul{
+    list-style-type: none;
+    display: flex;
+}
+footer > ul > li{
+    padding-left: 16px;
+}
