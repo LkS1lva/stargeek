@@ -26,6 +26,7 @@ header{
 .hesquerda{
     display: flex;
     column-gap: 40px;
+    jenny-mod;
 }
 
 .logo img{
@@ -61,7 +62,7 @@ header{
 
 section{
     align-items: center;
-    display: flex;
+    padding-left:10vw;
     width: 100%;
     justify-content: center;
     grid-area: s;
@@ -69,11 +70,12 @@ section{
 
 fieldset{
     margin-top: 30px;
-    display: flex;
+    display: flex ;
     flex-direction: column;
     width: 80vw;
     align-items: center;
     border-radius: 15px;
+    
 }
 
 fieldset > div{

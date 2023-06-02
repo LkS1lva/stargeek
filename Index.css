@@ -28,6 +28,11 @@ header{
     padding: 20px 40px;
 }
 
+.hdireita > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
 .hesquerda{
     display: flex;
     column-gap: 40px;
@@ -62,7 +67,10 @@ header{
     column-gap: 20px;
     padding-top: 30px;
     font-size: 1.5rem;
+    text-decoration: none;
+    
 }
+
 
 main{
     grid-area: c;
@@ -92,6 +100,7 @@ main > a{
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Rubik Mono One';
+    text-decoration: none;
 }
 .Capasiteimg{
     background-image: url(Capaimg.jpg);
