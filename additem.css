@@ -60,6 +60,11 @@ header{
     font-size: 1.5rem;
 }
 
+.hdireita > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
 section{
     align-items: center;
     padding-left:10vw;
