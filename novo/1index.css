@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px auto;
+    grid-template-areas:
+    "h"
+    "c"
+    "r"
+    ;
+}
+
+header{
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.hdireita > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.hesquerda{
+    display: flex;
+    column-gap: 40px;
+}
+
+.logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.barrapesquisa{
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+   padding: 10px;
+    border-radius: 15px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10PX;
+}
+
+.hdireita > ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+
+main{
+    grid-area: c;
+    background-image: url(imagens/Capaimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding-left: 50px;
+   row-gap: 30px;
+}
+
+main > p{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Rubik Mono One';
+}
+
+main > a{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Rubik Mono One';
+    text-decoration: none;
+}
+.Capasiteimg{
+    background-image: url(Capaimg.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50%;
+}
+
+.capasitetxt{
+    
+  color: white;
+}
+
+.sobrenos{
+    color: white;
+}
+.sobrenos > h1{
+    font-size: 2rem;
+    font-style: bold;
+    font-family: 'Rubik Mono One';
+}
+
+.sobrenos > p{
+    font-size: 1.5rem;
+}
+
+footer{
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+
+.social > i{
+    font-size: 1.5rem;
+    padding-left: 16px;
+}
+
+footer > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer > ul > li{
+    padding-left: 16px;
+}
+
+.sobrenos > p{
+    width: 50%;
+}
+
+main > a{
+    font-style: normal;
+}
